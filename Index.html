@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Text</title>
+</head>
+<body>
+    <h1>Introduceți cuvântul cheie</h1>
+    <input type="text" id="keyword" placeholder="Introduceți cuvântul cheie">
+    <button onclick="revealText()">Dezvăluie textul</button>
+    <div id="reveal"></div>
+    
+    <script>
+        function revealText() {
+            var keyword = document.getElementById("keyword").value;
+            if (keyword === "cuvantcheie") {
+                document.getElementById("reveal").innerHTML = "Acesta este textul dezvăluit!";
+            } else {
+                document.getElementById("reveal").innerHTML = "Cuvânt cheie incorect!";
+            }
+        }
+    </script>
+</body>
+</html>
